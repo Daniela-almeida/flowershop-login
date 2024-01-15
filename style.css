@@ -67,7 +67,9 @@ h2 {
   font-family: sans-serif;
   font-weight: 600;
   text-align: center;
-  margin-left: 5em;
+  position: relative;
+  right: 0;
+  left: 0;
   color: rgba(0, 0, 0, 0.822);
 }
 
@@ -143,12 +145,16 @@ button {
 /* responsive */
 
 @media screen and (max-width: 700px) {
+  body {
+    overflow: hidden;
+  }
   h2 {
-    margin-left: auto;
+    position: relative;
+    right: 2.5em;
   }
   .container-main .card {
     height: 60vh;
-    width: 80%;
+    width: 89%;
   }
   .container-main .card img {
     display: none;
@@ -170,13 +176,16 @@ button {
     position: relative;
     top: 2em;
     left: 4.5em;
+    width: 72%;
   }
 }
 
 @media screen and (min-width: 701px) and (max-width: 999px) {
   h2 {
-    margin-left: 5em;
+    position: relative;
+    right: 5.5em;
   }
+
   .container-main .card {
     height: 60vh;
     width: 80%;
@@ -207,8 +216,8 @@ button {
 @media screen and (min-width: 1000px) and (max-width: 1680px) {
   h2 {
     position: relative;
-    top: 2em;
-    right: 3.3em;
+    right: 3.2em;
+    top: 1em;
   }
   .container-main .card {
     height: 60vh;
@@ -217,11 +226,11 @@ button {
     bottom: 38em;
   }
   .container-main .card img {
-    width: 42%;
+    width: 49%;
     height: auto;
     position: relative;
-    top: 1.2em;
-    right: 6.2em;
+    top: 0.2em;
+    right: 4.8em;
   }
 
   #user,
@@ -245,7 +254,7 @@ button {
   }
   .forgot {
     position: relative;
-    bottom: 1.5em;
-    left: 12em;
+    bottom: -1.5em;
+    left: 4.5em;
   }
 }
